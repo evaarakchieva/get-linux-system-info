@@ -1,5 +1,7 @@
 import json
 import logging
+
+from get_cgroups_info import get_cgroups_info
 from get_cpu_info import get_cpu_info
 from get_disks_info import get_host_disks
 from get_mem_info import get_host_mem

@@ -30,7 +30,7 @@ def get_device_size(device):
 def get_host_disks():
     """Returns information about the host's disks."""
     disks = {}
-    block_devices = os.listdir('/sys/block/self/devices')
+    block_devices = os.listdir('/sys/bus/scsi/devices/')
     for device in block_devices:
         model = get_device_model(device)
         size = get_device_size(device)
